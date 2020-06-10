@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import ant from "./ant.svg";
+
 
 
 const sliderContent = [
@@ -34,7 +34,7 @@ const sliderContent = [
     content: (
       <div className="contentContainer">
         <h4>Is this a header for ants??</h4>
-        <img src={ant} alt="Ant" />
+        <p>It is really tiny</p>
       </div>
     ),
   },
