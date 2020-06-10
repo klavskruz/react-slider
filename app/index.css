@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  .contentContainer{
+    text-align: center;
+  }
+  .contentContainer img{
+    max-width: 50px;
+    max-height: auto;
+  }
+  .activeSlide{
+    opacity: 100%;
+    transition: all 1s linear;
+    grid-column-start:1;
+    grid-column-end:1;
+    grid-row-start:1;
+    grid-row-end:1;
+    justify-content: stretch;
+  }
+  .disabledSlide{
+    opacity: 0;
+    height:0;
+    width:0;
+  }
+  .activePage{
+    font-size: 1.5rem;
+    transition: all 0.5s linear;
+  }
+  .PageNumber{
+    list-style: none;
+    padding: 10px;
+  }
+  .pageList{
+    list-style: none;
+    display: flex;
+    grid-column-start:2;
+    grid-column-end:2;
+    grid-row-start:5;
+    grid-row-end:5;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+  }
+  .carousel{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: stretch;
+  }
+  .slideDisplay{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr ;
+    grid-column-start:2;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:5;
+    max-height: inherit;
+    min-height: inherit;
+  }
+  .nextButton{
+    grid-column-start:3;
+    grid-column-end:3;
+    grid-row-start:3;
+    grid-row-end:3;
+    text-align: left;
+    size: 2rem;
+    padding:1rem;
+  }
+  .previousButton{
+    grid-column-start:1;
+    grid-column-end:1;
+    grid-row-start:3;
+    grid-row-end:3;
+    text-align: right;
+    size: 2rem;
+    padding: 1rem;
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
