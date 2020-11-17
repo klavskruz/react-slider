@@ -25,11 +25,3 @@ Clone down this repository. You will need node and npm installed globally on you
 
 To use slider component copy the app folder into your project src, import the component and add your desired content to the sliderContent array.
 
-# Reflection
-This project is a part of my self-study journey to become an employed developer.
-The obstacles I faced during this build included but were not limited to: 
-Implementing touch functionality,
-finding the alternative to mouse events on mobile devices,
-learning to configure webpack and making an application without using create-react-app.
-
-Thanks for taking time to read this and if there is anything you'd like to see me improve contact me!
